@@ -1,5 +1,10 @@
 {
     "presets": [
-        "@babel/prestes-react", { "runtime": "automatic" }
+        [
+            "@babel/preset-react", 
+            { 
+                "runtime": "automatic" 
+            }
+        ]
     ]
 }
