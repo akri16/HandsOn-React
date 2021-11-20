@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +15,10 @@
     "-": "0.0.1",
     "D": "^1.0.0",
     "prettier": "^2.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0",
+    "parcel": "^1.12.3"
   }
 }

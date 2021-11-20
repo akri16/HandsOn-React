@@ -1,3 +1,5 @@
+/* global React ReactDOM*/
+
 // A react Component with props (Properties)
 const Pet = (props) => {
   return React.createElement("div", {}, [
