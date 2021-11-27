@@ -1,10 +1,11 @@
 {
     "extends": [
         "eslint:recommended", 
-        "prettier",
         "plugin:react/errors",
         "plugin:react/recommended",
-        "plugin:jsxa11y/recommended"
+        "plugin:jsxa11y/recommended",
+        "plugin:react-hooks/recommended",
+        "prettier"
     ],
 
     "rules": {
@@ -22,7 +23,9 @@
     },
 
     "settings": {
-        "version": "detect"
+        "react": {
+            "version": "detect"
+        }
     },
 
     "env": {
