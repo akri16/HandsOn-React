@@ -1,9 +1,9 @@
 {
     "extends": [
         "eslint:recommended", 
-        "plugin:react/errors",
+        "plugin:import/errors",
         "plugin:react/recommended",
-        "plugin:jsxa11y/recommended",
+        "plugin:jsx-a11y/recommended",
         "plugin:react-hooks/recommended",
         "prettier"
     ],
@@ -13,20 +13,30 @@
         "react/react-in-jsx-scope": 0
     },
 
-    "plugins": ["imports", "react", "jsx-a11y"],
+    "plugins": ["react", "import", "jsx-a11y"],
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
         "ecmaVersion": 2021,
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true
-        }
+        },
+        "requireConfigFile": false
     },
 
     "settings": {
         "react": {
             "version": "detect"
-        }
+        },
+
+        "import/parsers": {
+            "espree": [
+              ".js",
+              ".jsx"
+            ]
+          }
     },
+
 
     "env": {
         "es6": true,
