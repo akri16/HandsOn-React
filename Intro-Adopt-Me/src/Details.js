@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { withRouter } from "react-router-dom";
+import Carousel from './Carousel'
 
 class Details extends Component {
 
@@ -22,10 +23,13 @@ class Details extends Component {
   }
 
   render() {
-    const { animal, breed, name, city, state, description } = this.state;
+    const { animal, breed, name, city, state, description, images } = this.state;
     console.log(this.state);
     return (
       <div className="details">
+
+        <Carousel images={ images }/>
+
         <div>
           <h1>{name}</h1>
           <h2>{`${animal} - ${breed} - ${city}, ${state}`}</h2>
